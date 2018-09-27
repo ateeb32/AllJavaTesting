@@ -1,0 +1,13 @@
+package com.qa.ateeb.AutomatedAssessment;
+
+public class Constants {
+	
+	public static final String chromeDriverRoot = "C:\\\\Testing/chromedriver.exe";
+	
+	//public static final String websiteURL = "C:\\\\Testing/chromedriver.exe";
+	
+	public static final String featureFileRoot = "C:\\Users\\Admin\\Desktop\\My Eclipse Workspace\\AutomatedAssessment\\src\\test\\java\\com\\qa\\ateeb\\AutomatedAssessment\\FridayAssessment.feature";
+	
+	public static final String screenshotSave = "C:\\Users\\Admin\\Desktop\\My Eclipse Workspace\\AutomatedAssessment\\ReportsAndScreenshots";
+	
+}

@@ -1,0 +1,20 @@
+package com.qa.ateeb.RESTassuredExample;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import io.restassured.response.Response;
+
+public class SimpleTest {
+	
+	private Response response;
+	private ValidatableResponse json;
+	private RequestSpecification request;
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

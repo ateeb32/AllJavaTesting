@@ -1,0 +1,13 @@
+package com.qa.ateeb.AdvancedTestingAssessment;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class PetHomePage {
+	
+	@FindBy(xpath = "/html/body/app-root/div[1]/nav/div/ul/li[2]/a")
+	private WebElement OwnersDropDown;
+	
+	
+
+}

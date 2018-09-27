@@ -1,0 +1,78 @@
+package com.qa.ateeb.AutomatedAssessment;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class JenkinsUserPage {
+	
+	@FindBy(id = "username")
+	private WebElement usernameWrite;
+	
+	@FindBy(id = "password1")
+	private WebElement passwordWrite;
+	
+	@FindBy(id = "password2")
+	private WebElement password2Write;
+	
+	@FindBy(xpath = "//*[@id=\"main-panel\"]/form/div[1]/table/tbody/tr[4]/td[2]/input")
+	private WebElement fullNameWrite;
+	
+	@FindBy(xpath = "//*[@id=\"main-panel\"]/form/div[1]/table/tbody/tr[5]/td[2]/input")
+	private WebElement emailWrite;
+	
+	
+	@FindBy(id = "yui-gen3-button")
+	private WebElement createUserButton;
+	
+	public void fillUser() {
+		
+		usernameWrite.sendKeys("donkey");
+		
+	}
+	
+	public void fillPass1() {
+		
+		//passwordWrite.click();
+		passwordWrite.sendKeys("foxxy");
+		
+	}
+	
+	public void fillPass2() {
+		
+		//password2Write.click();
+		password2Write.sendKeys("foxxy");
+		
+	}
+	
+	public void fillFullName() {
+		
+		//fullNameWrite.click();
+		fullNameWrite.sendKeys("Donkey Kong");
+		
+	}
+	
+	public void fillUser() {
+		
+		usernameWrite.sendKeys("donkey");
+		
+		passwordWrite.click();
+		passwordWrite.sendKeys("foxxy");
+		
+		password2Write.click();
+		password2Write.sendKeys("foxxy");
+		
+		fullNameWrite.click();
+		fullNameWrite.sendKeys("Donkey Kong");
+		
+		emailWrite.click();
+		emailWrite.sendKeys("dddkkk@hotmail.co.uk");
+		
+	}
+	
+	public void clickCreateUser() {
+		
+		createUserButton.click();
+		
+	}
+	
+}

@@ -1,0 +1,33 @@
+package com.qa.ateeb.RESTassuredExample;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
+import io.restassured.specification.RequestSpecification;
+
+public class SimpleTest {
+	
+	private Response response;
+	private ValidatableResponse json;
+	private RequestSpecification request;
+
+	@Test
+	public void test() {
+		
+		RestAssured.given()
+		.contentType(ContentType.JSON)
+		
+		.when()
+		.get(Constants.websiteApiURL + "&t=" + "batman")
+			
+		.then().statusCode(200);
+		
+		
+	}
+
+}

@@ -1,0 +1,28 @@
+package com.qa.ateeb.AutomatedAssessment;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class JenkinsHomePage {
+	
+	@FindBy(xpath = "//*[@id=\"tasks\"]/div[2]/a[2]")
+	private WebElement peopleClick;
+	
+	@FindBy(id = "j_username")
+	private WebElement usernameFieldWrite;
+	
+	
+	public void peopleLink() {
+		
+		peopleClick.click();
+		
+	}
+	
+	public void usernameInput() {
+		
+		
+		
+	}
+
+
+}

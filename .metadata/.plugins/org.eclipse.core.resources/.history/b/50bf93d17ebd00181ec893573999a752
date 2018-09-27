@@ -1,0 +1,40 @@
+package com.qa.ateeb.AutomatedAssessment;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class JenkinsHomePage {
+	
+	@FindBy(id = "j_username")
+	private WebElement usernameFieldWrite;
+	
+	@FindBy(xpath = "//*[@id=\"main-panel\"]/div/form/table/tbody/tr[2]/td[2]/input")
+	private WebElement passwordFieldWrite;
+	
+	@FindBy(id = "yui-gen1-button")
+	private WebElement loginButton;
+	
+	@FindBy(xpath = "//*[@id=\"tasks\"]/div[4]/a[2]")
+	private WebElement manageJenkinsClick;
+	
+	@FindBy(xpath = "//*[@id=\"management-links\"]/tbody/tr[16]/td[2]/div[1]/a")
+	private WebElement manageUsersClick;
+	
+	
+	public void manageJenkinsLink() {
+		
+		manageJenkinsClick.click();
+		manageUsersClick.click();
+		
+	}
+	
+	public void loginInput() {
+		
+		usernameFieldWrite.sendKeys("admin");
+		passwordFieldWrite.sendKeys("42462751d9da47bb84e3c318b9fa389c");
+		loginButton.click();
+		
+	}
+
+
+}

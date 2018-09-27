@@ -1,0 +1,7 @@
+package com.qa.ateeb.SwaggerUITest;
+
+public class Constants {
+	
+	static final String URL = "http://localhost:8090/swagger-ui.html#!/hotels";
+
+}

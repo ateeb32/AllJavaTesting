@@ -1,0 +1,8 @@
+package com.qa.ateeb.AutomatedAssessment;
+
+public class JenkinsUserCreatedPage {
+	
+	@FindBy(xpath = "//*[@id=\"people\"]/tbody/tr[3]/td[2]/a")
+	private WebElement userFound;
+
+}

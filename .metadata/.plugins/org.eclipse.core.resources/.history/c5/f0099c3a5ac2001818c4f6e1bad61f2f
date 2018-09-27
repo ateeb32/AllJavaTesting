@@ -1,0 +1,8 @@
+package com.qa.ateeb.AdvancedTestingAssessment;
+
+public class OwnerPage {
+	
+	@FindBy(xpath = "/html/body/app-root/app-owner-list/div/div/div/table/tbody/tr[18]/td[1]/a")
+	private WebElement checkUpdate;
+
+}
